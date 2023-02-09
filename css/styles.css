@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-buttons {
+    display: flex;
+    margin-left:95px;
+}
+
+.nav-link {
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #181818;
+}
+
+.reg-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #151515;
+    cursor: pointer;
+}
+
+.login-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #656293;
+    border-radius: 5px;
+    padding: 5px 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
