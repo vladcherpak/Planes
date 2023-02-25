@@ -219,6 +219,7 @@ h3 {
     font-size: 24px;
     line-height: 36px;
     color: #151515;
+    margin-bottom: 20px;
 }
 
 p {
@@ -347,4 +348,34 @@ section {
     position: relative;
 }
 
+.membership-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
 
+.membership-item{
+    width: calc((100% -48px) / 3);
+    padding: 24px;
+    background-color: #F5F5F5;
+}
+
+
+.membership-item:nth-child(2) {
+    background-color: #656293;
+}
+
+.membership-item:first-child {
+    border-radius: 20px 0px 0px 20px;;
+}
+
+.membership-item:last-child {
+    border-radius: 0px 20px 20px 0px;;
+}
+
+.membership-item h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+}
