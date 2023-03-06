@@ -25,7 +25,10 @@ ul {
     width: 100%;
     position: fixed;
     padding: 30px 0;
+    background-color: white;
+    z-index: 10;
 }
+
 
 .container {
     max-width: 1150px;
@@ -54,9 +57,21 @@ ul {
     align-items: center;
 }
 
+@media screen and (max-width:1024px)  {
+    .nav-list {
+        display: none;
+    }
+}
+
 .header-buttons {
     display: flex;
     margin-left:95px;
+}
+
+@media screen and (max-width:767px) {
+    .header-buttons {
+        display: none;
+    }
 }
 
 .nav-link {
@@ -190,6 +205,9 @@ h2::before {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+.business {
+    padding-top: 40px;
+}
 
 .business-top .container, .business-bottom .container {
     display: flex;
@@ -235,8 +253,10 @@ p {
 }
 
 section {
-    padding-top: 115px;
+    padding-bottom: 115px;
 }
+
+
 
 .business-top::before {
     content: "";
@@ -350,6 +370,7 @@ section {
 
 .planes {
     position: relative;
+    overflow: hidden;
 }
 
 .membership-list {
@@ -491,5 +512,54 @@ section {
 
 .footer-plane {
     margin: 0 auto;
-    
+}
+
+.footer-bottom {
+    background-color: #656293;
+}
+
+.footer-logo {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo a {
+    display: block;
+    height: fit-content;
+}
+
+.footer-info {
+    border-top:1px solid rgba(255, 255, 255, 0.2); 
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.footer-info nav {
+    flex: 1;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 21px;
 }
