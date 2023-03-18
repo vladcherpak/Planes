@@ -256,6 +256,11 @@ h2 {
     position: relative;
     margin-bottom: 64px;
 }
+@media screen and (max-width:480px) {
+    h2 {
+       margin-bottom: 32px;
+    }
+}
 
 h2::before {
     content: "";
@@ -302,6 +307,14 @@ h2::before {
     padding: 65px 0;
     position: relative;
 }
+
+@media screen and (max-width:480px) {
+    .business-top img, .business-bottom img {
+    max-width: 400px;
+ }
+}
+
+
 
 img {
     display: block;
@@ -367,6 +380,13 @@ section {
     z-index: -1;
 }
 
+@media screen and (max-width:480px) {
+    .business-bottom::before,
+    .business-top::before {
+        display: none;
+    }
+}
+
 .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -375,12 +395,21 @@ section {
     position: relative;
 }
 
+
+
 @media screen and (max-width:768px) {
     .services-list {
     column-gap: 10px;
     row-gap: 350px;
     justify-content: space-between;
  }
+}
+
+@media screen and (max-width:480px) {
+    .services-list {
+       gap: 20px;
+       justify-content: space-between;
+    }
 }
 
 .services-item {
@@ -400,13 +429,24 @@ section {
  }
 }
 
+@media screen and (max-width:480px) {
+    .services-item {
+     width: 100%;
+    }
+}
+
 .services-image {
     max-width: 297px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+@media screen and (max-width:480px) {
+    .services-image {
+       display: none;
+    }
 }
 
 .services-item img {
